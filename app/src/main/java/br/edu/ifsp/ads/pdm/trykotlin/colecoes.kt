@@ -53,4 +53,17 @@ fun main() {
     setCursos.add("SDM")
     setCursos.forEach { println(it) }
 
+    val familiaMap: MutableMap<String, String> = mutableMapOf(
+            Pair("Pai", "Gabriel"),
+            Pair("Mãe", "Livia"),
+            Pair("Gato", "Aslan"),
+            Pair("Gata", "Luna")
+    )
+
+    familiaMap.put("Cachorro", "Chiquinha")
+    familiaMap.keys.forEach { chave ->
+        println("$chave: ${familiaMap[chave]}")
+    }
+
+    val hashMap: HashMap<String, String> = HashMap()
 }
